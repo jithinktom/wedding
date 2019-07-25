@@ -1,0 +1,21 @@
+.timer {
+    display: flex;
+    flex-direction: row;
+
+    .time {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 1.8em;
+    }
+
+    span {
+        display: inline-block;
+        margin: 0 8px;
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .timer {
+        flex-direction: column;
+    }
+}
