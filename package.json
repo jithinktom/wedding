@@ -2,7 +2,7 @@
   "name": "wedding-countdown",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/jithinktom/wedding.git",
+  "homepage": "https://jithinktom.github.io/wedding",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "moment": "^2.24.0",
