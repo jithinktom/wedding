@@ -15,9 +15,10 @@ class Timer extends React.Component {
         }
     }
     tick = () => {
-        var a = moment("07/25/2019", "MM/DD/YYYY");
-        var b = moment("11/09/2019", "MM/DD/YYYY");
-        var duration = moment.duration(eventTime - Date.now(), 'milliseconds')
+        let date = new Date()
+        let a = moment(`${date.getUTCMonth()+1}/${date.getDate()}/${date.getFullYear()}`, "MM/DD/YYYY");
+        let b = moment("11/09/2019", "MM/DD/YYYY");
+        let duration = moment.duration(eventTime - Date.now(), 'milliseconds')
         this.setState({
             days: b.diff(a, 'days'),
             hours: duration.hours(),
