@@ -1,0 +1,26 @@
+.save-date {
+    .details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .date {
+            margin-top: -10px;
+            color: #c69418;
+            font-size: 3em;
+            font-family: 'Satisfy', cursive;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .save-date {
+        .details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .date {
+                font-size: 2.2em;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.invitation-images {
+    display: flex;
+    justify-content: center;
+
+    .img-container {
+        width: 40%;
+        min-width: 600px;
+        border: 1px solid #cfcfcf;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .invitation-images {
+        .img-container {
+            width: 80%;
+            min-width: 10px;
+        }
+    }
+}

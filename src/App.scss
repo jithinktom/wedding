@@ -2,20 +2,31 @@ header {
     font-size: 2em;
 }
 
-.App {
-    width: 100vw;
-    max-width: 100vw;
-    height: 100vh;
-    max-height: 100vh;
-    overflow: hidden;
+.section-header-text {
+    font-size: 2.2em;
+    padding: 80px 15px;
+    color: rgb(85, 85, 85);
+    text-align: center;
     font-family: 'Satisfy', cursive;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    z-index: 1;
-    color: #fff;
-    padding: 0 20px;
-    box-sizing: border-box;
-    position: relative;
+    .love {
+        color: red;
+    }
+}
+
+.section {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.8em;
+}
+
+@media screen and (max-width: 600px) {
+    .section-header-text {
+        padding: 60px 15px;
+    }
 }

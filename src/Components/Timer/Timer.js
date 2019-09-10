@@ -16,7 +16,7 @@ class Timer extends React.Component {
     }
     tick = () => {
         let date = new Date()
-        let a = moment(`${date.getUTCMonth()+1}/${date.getDate()}/${date.getFullYear()}`, "MM/DD/YYYY");
+        let a = moment(`${date.getUTCMonth() + 1}/${date.getDate()}/${date.getFullYear()}`, "MM/DD/YYYY");
         let b = moment("11/09/2019", "MM/DD/YYYY");
         let duration = moment.duration(eventTime - Date.now(), 'milliseconds')
         this.setState({
@@ -33,20 +33,32 @@ class Timer extends React.Component {
         return (
             <div className="timer">
                 <div>
-                    <span className="time">{this.state.days}</span>
-                    <span>days</span>
+                    <div className="segment">
+                        <span className="digit">{parseInt(this.state.days / 10)}</span>
+                        <span className="digit">{this.state.days % 10}</span>
+                        <span className="unit">days</span>
+                    </div>
                 </div>
                 <div>
-                    <span className="time">{this.state.hours}</span>
-                    <span>hours</span>
+                    <div className="segment">
+                        <span className="digit">{parseInt(this.state.hours / 10)}</span>
+                        <span className="digit">{this.state.hours % 10}</span>
+                        <span className="unit">hours</span>
+                    </div>
                 </div>
                 <div>
-                    <span className="time">{this.state.minutes}</span>
-                    <span>minutes</span>
+                    <div className="segment">
+                        <span className="digit">{parseInt(this.state.minutes / 10)}</span>
+                        <span className="digit">{this.state.minutes % 10}</span>
+                        <span className="unit">minutes</span>
+                    </div>
                 </div>
                 <div>
-                    <span className="time">{this.state.seconds}</span>
-                    <span>seconds</span>
+                    <div className="segment">
+                        <span className="digit">{parseInt(this.state.seconds / 10)}</span>
+                        <span className="digit">{this.state.seconds % 10}</span>
+                        <span className="unit">seconds</span>
+                    </div>
                 </div>
             </div>
         )
