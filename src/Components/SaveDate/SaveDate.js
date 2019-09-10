@@ -12,7 +12,7 @@ class SaveDate extends React.Component {
                 </div>
                 <div className="details">
                     <div className="date">
-                        11 AM, 09 November 2019
+                        09 November 2019 @ 11 am
                     </div>
                     <Timer />
                 </div>
